@@ -29,4 +29,9 @@ public class CategoriaController {
     public ResponseEntity<?> findById(@PathVariable Long id){
         return ResponseEntity.ok(categoriaService.findById(id));
     }
+
+    @GetMapping("/search-producto/{categoriaId}")
+    public ResponseEntity<?> findProductosByCategoriaId(@PathVariable Long categoriaId){
+        return ResponseEntity.ok(categoriaService.findProductosByCategoriaId(categoriaId));
+    }
 }
