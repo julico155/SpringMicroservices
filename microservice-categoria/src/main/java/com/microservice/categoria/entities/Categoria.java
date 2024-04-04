@@ -19,4 +19,6 @@ public class Categoria {
     private Long id;
     private String name;
     private String descripcion;
+
 }
+

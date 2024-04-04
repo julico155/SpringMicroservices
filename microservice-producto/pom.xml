@@ -4,16 +4,16 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.4</version>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-parent</artifactId>
+    	<version>3.2.4</version>
 	</parent>
 
 	<groupId>com.microservice.producto</groupId>
 	<artifactId>microservice-producto</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>microservice-producto</name>
-	<description>Spring Boot Microservice Producto</description>
+	<description>Spring Boot Microservice Categoria</description>
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2023.0.1</spring-cloud.version>

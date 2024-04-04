@@ -8,7 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
-
+/** Envia la respuesta por medio del microservicio, desde producto a Categoria*/
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

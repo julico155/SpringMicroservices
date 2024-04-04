@@ -11,8 +11,7 @@ import java.util.List;
 @FeignClient(name = "msvc-producto", url = "localhost:8090")
 public interface ProductoClient {
 
-
-
+    /** DTO=Objeto de tranferencia de datos */
     @GetMapping("/api/producto/search-by-categoria/{categoriaId}")
-    List<ProductoDTO> findAllProductostByCategoria(@PathVariable Long categoriaId);
+    List<ProductoDTO> findAllProductoByCategoria(@PathVariable Long categoriaId);
 }
