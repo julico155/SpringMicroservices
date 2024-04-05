@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name = "msvc-producto", url = "localhost:8090")
+@FeignClient(name = "msvc-producto", url = "localhost:8090/api/producto")
 public interface ProductoClient {
 
     /** DTO=Objeto de tranferencia de datos */
-    @GetMapping("/api/producto/search-by-categoria/{categoriaId}")
+    @GetMapping("/search-by-categoria/{categoriaId}")
     List<ProductoDTO> findAllProductoByCategoria(@PathVariable Long categoriaId);
 }

@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public interface ProductoRepository extends CrudRepository<Producto, Long> {
 
-    @Query("SELECT p FROM Producto p WHERE p.categoriaID = :idCategoria")
+    @Query("SELECT p FROM Producto p WHERE p.categoria_id = :idCategoria")
     List<Producto> findAllProducto(Long idCategoria);
 
 }

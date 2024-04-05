@@ -23,5 +23,5 @@ public class Producto {
     private  Double precio;
 
     @Column(name = "categoria_id")
-    private Long categoriaId;
+    private Long categoria_id;
 }
