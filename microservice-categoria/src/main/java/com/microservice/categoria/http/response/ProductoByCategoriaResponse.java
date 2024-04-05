@@ -15,7 +15,7 @@ import java.util.List;
 @Builder
 public class ProductoByCategoriaResponse {
 
-    private String name;
+    private String cate;
     private String descripcion;
     private List<ProductoDTO> productoDTOList;
 

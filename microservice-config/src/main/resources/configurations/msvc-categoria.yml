@@ -1,12 +1,12 @@
 server:
-  port: 8090
+  port: 9090
 
 spring:
   application:
-    name: msvc-producto
+    name: msvc-categoria
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/productoDb
+    url: jdbc:postgresql://localhost:5432/categoriaDb
     username: postgres
     password: 1234
   jpa:
@@ -14,8 +14,6 @@ spring:
       ddl-auto: create
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-  config:
-    import: optional:configserver:http://localhost:8888
 
 eureka:
   instance:
@@ -23,4 +21,3 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
-    import: optional:configserver:http://localhost:8888

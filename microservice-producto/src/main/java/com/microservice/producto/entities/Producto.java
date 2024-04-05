@@ -6,7 +6,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/** Base de datos producto*/
+/** Base de datos producto
+ * capa modelo*/
+
 @Data
 @Entity
 @Builder

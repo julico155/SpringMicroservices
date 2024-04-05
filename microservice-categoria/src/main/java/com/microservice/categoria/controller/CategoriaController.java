@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(origins = "http://127.0.0.1:5500")
 @RequestMapping("/api/categoria")
 public class CategoriaController {
 
@@ -18,8 +19,9 @@ public class CategoriaController {
 
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
-    public void saveCategoria(@RequestBody Categoria categoria){
+    public ResponseEntity<String> saveCategoria(@RequestBody Categoria categoria){
         categoriaService.save(categoria);
+        return ResponseEntity.status(HttpStatus.CREATED).body("Categoría creada con éxito");
     }
 
     @GetMapping("/all")

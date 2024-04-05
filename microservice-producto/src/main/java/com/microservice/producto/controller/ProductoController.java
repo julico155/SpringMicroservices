@@ -1,6 +1,5 @@
 package com.microservice.producto.controller;
 
-
 import com.microservice.producto.entities.Producto;
 import com.microservice.producto.service.IProductoService;
 import org.springframework.beans.factory.annotation.Autowired;

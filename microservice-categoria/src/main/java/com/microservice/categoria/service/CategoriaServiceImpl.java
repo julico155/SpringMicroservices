@@ -46,7 +46,7 @@ public class CategoriaServiceImpl implements ICategoriaService {
         List<ProductoDTO> ProductoDTOList = ProductoClient.findAllProductoByCategoria(categoriaId);
 
             return ProductoByCategoriaResponse.builder()
-                    .name(categoria.getName())
+                    .cate(categoria.getCate())
                     .descripcion(categoria.getDescripcion())
                     .productoDTOList(ProductoDTOList)
                     .build();
